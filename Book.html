@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pup Huts :: Book</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="PupHuts.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="puphuts"></div> <!-- Logo located at the top of every page*/-->
+  </header>
+   <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Cabins.html">Cabin With A Pup</a></li>
+      <li><a href="Book.html">Book For A Cause</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Javascript.html">Javascript Used</a></li>
+	</ul>
+  </nav>
+<div class="sidebar">
+  <!--Sidebar created that will take visitors to an animal rescue donation page-->
+  <a class="active" href="https://secure.aspca.org/donate/ps-gn-p2?ms=MP_PMK_Googlebrand-T4&initialms=MP_PMK_Googlebrand-T4&pcode=WPSE9XXGOGN2PK00014&lpcode=WPSE9XXGOGN1PK00014&test&ds_rl=1066461&gclid=EAIaIQobChMIxoKC3-nT7QIVyhitBh3xNQgREAAYASAAEgJ1SfD_BwE&gclsrc=aw.ds">Donate To A<br> Rescue</a>
+</div>
+<div id="white"> <!--The "white" id create a shadow box around the information on the page-->
+  <main>
+    <h2 class="test2"> Book For A Cause </h2>
+    <p> Required fields are marked with an asterisk* </p>
+    <!--A form with a javascript function that will validate and keep the form from being submitted until all the inputs have been filled. Once filled and submitted, an alert pops up to thank the visitor for booking with Pup Huts.-->
+<form name="myForm" id="myForm" action="/">
+<label for="FullName">*Full Name</label>
+  <input type="text" class="input4" name="FullName" id="FullName" onkeyup="validate()" />
+<label for="myEmail">*Email:</label>
+  <input type="email" class="input4" name="myEmail" id="myEmail" onkeyup="validate()" />
+<label for="myPhone">*Phone:</label>
+  <input type="text" class="input2" name="myPhone" id="myPhone" onkeyup="validate()" />
+<label for="myDate">*Arrival Date:</label>
+  <input type="date" class="input3" name="myDate" id="myDate" onkeyup="validate()" />
+<label for="myNights">*Nights:</label>
+  <input type="number" class="input1" name="myNights" id="myNights" min="1" onkeyup="validate()" />
+<label for="myComments">Comments:</label>
+  <textarea name="myComments" class="input5" id="myComments" rows="2" cols="20" onkeyup="validate()"></textarea>
+<input type="submit" class="input4" id="submitted" value="Submit" disabled />
+</form>
+  </main>
+  <footer>
+Copyright &copy; Pup Huts<br>
+<a href="stephroussy@hotmail.com">stephroussy@hotmail.com</a>
+<div>This page was last modified on:<script> document.write(document.lastModified);</script> </div> <!--a function created to display the last date the website was modified on-->
+  </footer>
+</div>
+<script src="main.js"></script> 
+</body>
+</html>

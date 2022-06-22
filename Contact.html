@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pup Huts :: Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="PupHuts.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="puphuts"></div> <!-- Logo located at the top of every page*/-->
+  </header>
+    <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Cabins.html">Cabin With A Pup</a></li>
+      <li><a href="Book.html">Book For A Cause</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Javascript.html">Javascript Used</a></li>
+	</ul>
+  </nav>
+<div class="sidebar">
+  <!--Sidebar created that will take visitors to an animal rescue donation page-->
+  <a class="active" href="https://secure.aspca.org/donate/ps-gn-p2?ms=MP_PMK_Googlebrand-T4&initialms=MP_PMK_Googlebrand-T4&pcode=WPSE9XXGOGN2PK00014&lpcode=WPSE9XXGOGN1PK00014&test&ds_rl=1066461&gclid=EAIaIQobChMIxoKC3-nT7QIVyhitBh3xNQgREAAYASAAEgJ1SfD_BwE&gclsrc=aw.ds">Donate To A<br> Rescue</a>
+</div>
+<br>
+<div id="white"> <!--The "white" id create a shadow box around the information on the page-->
+  <main>
+<h2 class="test2">Contact Us</h2>
+<p> For more information about Pup Huts, please contact our office.</p>
+	<div class="flow"> <!--The "flow" class is used to adjust the position of the information to flex and row-->
+    <section>
+      <h3>By Phone:</h3>
+<p>
+Phone number: <a id="mobile" href="tel:888-555-5555">800-555-1234</a><span id="desktop">888-555-5555</span><br>
+Fax number: (123) 456-7893</p>
+
+<h3>By Email:</h3>
+<a href="mailto:stephroussy@hotmail.com.com">PupHuts@hotmail.com</a>
+
+<h3>Address</h3>
+<p class="area">
+44444 Dream Road <br>
+SilverFox, Montana,<br>
+64464</p>
+     </section>
+<br>
+<div id="slideshow"> <!--The slideshow id will be used to created a slideshow with the following images-->
+  <div><img src="dog.jpg" alt="dog" style="width:600px; height:600px;"></div>
+  <div><img src="tira.jpeg" alt="dog" style="width:600px; height:600px;"></div>
+<div><img src="finn.jpeg" alt="dog" style="width:600px; height:600px;"></div>
+<div><img src="honey.jpeg" alt="dog" style="width:600px; height:600px;"></div>
+<div><img src="sky.jpeg" alt="dog" style="width:600px; height:600px;"></div>
+  </div>
+   </div>
+<div class="flow"><!--The "flow" class is used to adjust the position of the information to flex and row-->
+   </div>
+  </main>
+  <footer>
+Copyright &copy; Pup Huts<br>
+<a href="stephroussy@hotmail.com">stephroussy@hotmail.com</a>
+<div>This page was last modified on:<script> document.write(document.lastModified);</script> </div><!--a function created to display the last date the website was modified on-->
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
+<script>$( document ).ready(function() {
+  $('#slideshow div:gt(0)').hide();
+
+  setInterval(function()
+  {$('#slideshow > :first-child').fadeOut(1000).next().fadeIn(1000).end().appendTo('#slideshow');}, 3000);
+});</script> <!--This javascript will create a slideshow of the images found on this page. The setInterval function will use the id "slideshow" and by starting with its first image (child), it will fade out and then in using every image within the "slideshow" id -->
+</body>
+</html>

@@ -1,0 +1,348 @@
+ * { box-sizing: border-box; }
+ /* Logo located at the top of every page*/
+header { 
+            background-image: url(puphuts.jpg);
+  	    background-repeat: no-repeat;
+            background-size: 100% 100%;
+       margin-bottom: auto;}
+ /* Navigation located under logo */
+nav {font-size: 1.2em;
+     text-align:center;
+     background-color: #FFFFFF;
+       margin-top: .5em;
+       margin-bottom: .5em;
+       width: 100%;
+       padding-left: 17%;}
+/* Changes the color of navigational links */
+nav a { text-decoration: none; }
+nav a:link       { color: #5C7FA3; }
+nav a:visited { color: #344873; }
+nav a:hover     { color: #A52A2A; }
+
+
+body { font-family: Verdana, Arial, sans-serif;
+       margin: 0px;}
+
+/* Welcome image located on home page */
+#welcome { height: 200px;
+            background-image: url(welcome.jpg);
+  	    background-repeat: no-repeat;
+            background-size: 100% 100%; }
+
+/* Creates a shadow box around information located on each web page */
+#white { margin-left: auto;
+         margin-right: auto;
+         width: 80%;
+         box-shadow: 5px 5px 10px 20px #828282;}
+
+main { display: block; 
+      padding: 0 2em;}
+
+/* Titles with class of test2  */
+.test2 { border-bottom: 5px solid black; }
+
+h2 { color: #000000;
+     font-family: Georgia, serif; text-align: center;
+     Font-size: 5em; }
+
+h3 { font-family: Georgia, serif; text-align: center;
+     Font-size: 2em; }
+
+/* Class:area is used to design the text on "about us" page */
+.area {color: #000000;
+       text-align: center;
+       Line-height: 2;}
+
+/* The "test" class is used to design the testimonial text on homepage */
+.test {font-family: Lucida Handwriting, cursive;
+       Font-size: 1em;
+       Line-height: 2; }
+
+/* The "flow" class was used to adjust the position of the information found on the home, cabins, and contact pages  */
+.flow { display: flex;
+        Flex-direction: row;
+        Text-align: center;
+        Color: #000000;
+        Font-size: 1em; }
+
+footer { background-color: #FFF;
+       font-size: .70em;
+       font-style: italic;
+	   padding: 1em;
+	   text-align: center; }
+
+/* The "des" class was used to position information on the "cabin with a pup" page */
+.des {line-height: 1.5;
+      Text-align: left; } 
+
+table { margin: auto;
+        border: 1px solid #3399CC;
+        width: 90%;
+        border-collapse: collapse;}
+
+/* The "people" class was used to design the titles in the table on the "cabin with a pup" page */
+.people {width: 10em }
+
+td, th { border: 1px solid #3399CC;
+         text-align: center;
+         padding: 5px; }
+
+/* These different numerical class inputs are used to adjust the sizes of the input boxes on the "book for a cause" page */
+input { display: block; margin-bottom: .5em; }
+
+.input1 {width: 3em}
+
+.input2 {width: 8em}
+
+.input3 {width: 11em}
+
+.input4 {width: 15em}
+
+.input5 {width: 30em}
+
+form { display: grid;
+       grid-template-rows: auto;
+       grid-template-columns: 10em 1fr;
+       grid-gap: 1em; gap: 1em;
+       width: 60%; }
+
+input[type="submit"] { grid-column: 2; 
+       width: 9em; }
+
+/* This changes the color of every row in the table on the "cabin with a pup" page (to make it more legible) */
+tr:nth-of-type(even) { background-color: #DFEDF8; }
+
+textarea { display: block; margin-bottom: .5em; }
+
+#mobile  { display: inline; }	
+
+#desktop { display: none; }
+
+/* Sidebar was created for visitors to click on and bring them to the SPCA website to donate funds */
+.sidebar { display: block;
+          padding: 2px;
+          text-decoration: none;
+          Margin-left: 1em;
+          width: 7em;
+          background-color: #f1f1f1;
+          position: fixed;
+          height: 3em;
+          overflow: auto;
+          border: 1px solid #000;
+          Text-align: center;}
+
+
+#slideshow {
+       position: relative;
+       height: 240px;
+       width: 240px;
+       padding: 10px;
+       margin-bottom: 25em;}
+            
+#slideshow div {
+       position: absolute;
+       top: 10px;
+       right: 10px;
+       bottom: 10px;
+       left: 10px;}
+
+.pop {
+       position: relative;
+       display: inline-block;
+       border-bottom: 1px dotted black;}
+            
+.pop .tooltiptext {
+       visibility: hidden;
+       width: 120px;
+       background-color: black;
+       color: #fff;
+       text-align: center;
+       border-radius: 6px;
+       padding: 5px 0;
+              
+/* Position the popup text */
+       position: absolute;
+       z-index: 1;
+       bottom: 100%;
+       left: 50%;
+       margin-left: -60px;}
+            
+.tooltip:hover .tooltiptext {
+       visibility: visible;}
+
+
+
+/* Adjustments made to certain elements based on size of screen (maximum width of 480px) */
+@media (max-width: 480px) {
+    
+       nav { list-style-type:none; 
+             margin-top: .5em;
+             padding: 0;
+              font-size: 1em;
+              line-height: 2em;}
+       nav ul {list-style-type:none;}
+       
+       #white { box-shadow: none }
+       
+       body { background-image:linear-gradient(#90C7E3, #FFFFFF);}
+       
+       
+       h2 { Font-size: 2em; }
+       
+       .flow { Flex-direction: column; }
+       
+       .cabin1 { width: 90%;
+                 Height: 90%; }
+       
+       .lola { width: 90%;
+                 Height: 90%; }
+       .cabin2 { width: 90%;
+                 Height: 90%; }
+       .lucky { width: 90%;
+                 Height: 90%; }
+       .cabin3 { width: 90%;
+                 Height: 90%; }
+       .fred { width: 90%;
+                 Height: 90%; }
+       .cabin4 { width: 90%;
+                 Height: 90%; }
+       .Ella { width: 90%;
+                 Height: 90%; }
+       .cabin5 { width: 90%;
+                 Height: 90%; }
+       .Peter { width: 90%;
+                 Height: 90%; }
+       h3 { Font-size: 1.8em; border-bottom: 2px solid black; }
+       
+       .husky {width: 90%;
+               Height: 90%; }
+       
+       .input3 {width:8em}
+       
+       .input4 {width: 8em}
+       
+       .input5 {width: 8em}
+       
+       form { grid-gap: .2em; gap: .2em;}
+
+       .sidebar { display: block;
+              color: black;
+              padding: 0;
+              text-decoration: none;
+              Margin-left: 1em;
+              width: 19%;
+              background-color: #f1f1f1;
+              position: fixed;
+              height: 11%;
+              margin-left: 1mm;
+              }
+       footer {
+              margin-bottom: 15em;
+       }}
+       
+/* Adjustments made to certain elements based on size of screen (maximum width of 740px) */
+       @media (max-width: 740px) {
+
+              #puphuts { height: 300px;}
+    
+              nav { list-style-type:none; 
+                    margin-top: .5em;
+                    padding: 0;
+                     font-size: 1em;
+                     line-height: 2em;}
+              nav ul {list-style-type:none;}
+              
+              #white { box-shadow: none }
+              
+              body { background-image:linear-gradient(#90C7E3, #FFFFFF);}
+              
+              
+              h2 { Font-size: 2em; }
+              
+              .flow { Flex-direction: column; }
+              
+              .cabin1 { width: 90%;
+                        Height: 90%; }
+              
+              .lola { width: 90%;
+                        Height: 90%; }
+              .cabin2 { width: 90%;
+                        Height: 90%; }
+              .lucky { width: 90%;
+                        Height: 90%; }
+              .cabin3 { width: 90%;
+                        Height: 90%; }
+              .fred { width: 90%;
+                        Height: 90%; }
+              .cabin4 { width: 90%;
+                        Height: 90%; }
+              .Ella { width: 90%;
+                        Height: 90%; }
+              .cabin5 { width: 90%;
+                        Height: 90%; }
+              .Peter { width: 90%;
+                        Height: 90%; }
+              h3 { Font-size: 1.8em; border-bottom: 2px solid black; }
+              
+              .husky {width: 90%;
+                      Height: 90%; }
+              
+              .input3 {width:8em}
+              
+              .input4 {width: 8em}
+              
+              .input5 {width: 8em}
+              
+              form { grid-gap: .2em; gap: .2em;}
+       
+              .sidebar { display: block;
+                     color: black;
+                     padding: 0;
+                     text-decoration: none;
+                     Margin-left: 1em;
+                     width: 19%;
+                     background-color: #f1f1f1;
+                     position: fixed;
+                     height: 11%;
+                     margin-left: 1mm;
+                     }
+              footer {
+                     margin-bottom: 15em;
+              }}
+       
+       /* Adjustments made to certain elements based on size of screen (minimum width of 740px) */
+       @media (min-width: 740px) { 
+       
+       #puphuts { height: 500px;}
+       
+       nav ul { display: flex;
+              flex-direction: row;
+                 list-style-type: none;
+                 padding: 0;
+              position:inherit; }
+       
+       nav li { padding: .5em 1em; }   
+       
+       body { background-image:linear-gradient(#90C7E3, #FFFFFF);}
+       
+       #white { box-shadow: none }
+       
+       .des {Text-align: center;
+             Padding-left: 2.5em;
+             Padding-right:2.5em;
+             List-style-type:none; } 
+       
+       .input5 {width: 20em}
+
+       .info {text-align: center;
+              color: #000000;}
+       
+       #mobile  { display: inline; }	
+       
+       #desktop { display: none; }
+       
+       .husky {width: 90%;
+               Height: 90%; }
+              
+       footer {margin-bottom: 5em;
+              margin-top: 2em;}} 
